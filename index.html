@@ -8,8 +8,417 @@
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/detalle.css">
     <link rel="stylesheet" href="css/contacto.css">
-  </head>
-  <body>
+</head>
 
-  </body>
+<body>
+   
+<!-------Inicio header------->
+    <header>
+        <section class="row">
+            <div id="ContenedorLogo" class="col-md-4">
+                <img src="img/gameplanet_logo.png" alt="logo" id="logoHeader">
+            </div>
+            <div class="col-md-5">
+                <div class="row"></div>
+                <div class="row">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-default">
+            <div class="row">
+                <div class="col-md-2 pl-3">
+                    <a href="#" class="textoNegro orange navbar-text">Inicio</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="textoNegro orange navbar-text">Quienes somos</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#catalogo" class="textoNegro orange navbar-text">Catálogo</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="textoNegro orange navbar-text">Detalle de producto</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#contacto" class="textoNegro orange navbar-text">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-------Fin header------->
+    
+<!-------Inicio Carousel------->
+    <section id="areaCarusel" class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/gp2.jpg" alt="ENJOY">
+                </div>
+
+                <div class="item">
+                    <img src="img/gp3.jpg" alt="MARIO">
+                </div>
+
+                <div class="item">
+                    <img src="img/gp1.jpg" alt="PLAY">
+                </div>
+
+                <div class="item">
+                    <img src="img/gp4.jpg" alt="ZELDA">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+<!-------Fin Carousel------->
+
+<!------------Inicio Catalogo---------->
+
+<div id="catalogo" class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="resulBusqueda mb">
+          <span><a href="http://gameplanet.com/">Inicio</a><span> > </span></span>
+          <span><a href="#"> Catalogo </a><span> > </span></span>
+          <span><a href="#"> Consolas</a></span>
+        </div>
+        <div class="busqueda defaul">
+          <div class="pl">
+            <h4>FILTRAR POR    | </h4>
+          </div>
+          <div class="muestra">
+            <p class="azul">Mostrar Inventario</p>
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation"><button class="btn btn-default btn-block hel">Con inventario en tiendas y/o en línea</button></li>
+              <li role="presentation"><button class="btn btn-default btn-block hel">Con inventario solo en línea</button></li>
+              <li role="presentation"><button class="btn btn-default btn-block hel">Todo el catalogo incluso sin inventario</button></li>
+            </ul>
+            <hr>
+            <button class="btn btn-block btn-reverse black">Precio: $4950 - $11700</button><br>
+            <p class="azul"> Borrar Todo</p>
+            <div class="input-group">
+              <input type="text" class="form-control" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">Buscar</span>
+            </div>
+            <hr>
+            <p class="preven"> Preventa</p>
+            <select name="" id="" class="dropdown">
+              <option value="-All-">-All-</option>
+            </select>
+            <hr>
+            <p class="preven"> Categoria</p>
+            <select name="" id="" class="dropdown">
+              <option value="-All-">-All-</option>
+            </select>
+            <hr>
+            <!--<p> Franquicia</p>
+            <ul class="list-group">
+              <li><input type="checkbox"><a href="#">Fifa (1)</a></li>
+              <li><input type="checkbox" ><a href="#">Pokemon (2)</a></li>
+              <li><input type="checkbox"><a href="#">Zelda (1)</a></li>
+              <li><input type="checkbox"> <a href="#">Play Station (1)</a></li>
+            </ul>
+            <hr>
+            <p> Plataforma</p>
+            <input type="checkbox"><a href="#">PS4 (1)</a>
+            <hr>
+            <p> Condicion</p>
+            <input type="checkbox"><a href="#">Nuevo (1)</a>
+            <hr>
+            <p> Publishera</p>
+            <input type="checkbox"><a href="#">SONY (1)</a>
+            <hr>
+            <p> Estatus Producto</p>
+            <input type="checkbox"><a href="#">Oferta (1)</a>
+          </div>
+          <hr>
+          <div class="pl">
+            <h4>MI CARRITO | </h4>
+          </div>
+          <div class="muestra">
+            <p>Usted no tiene artículos en su carrito de compras.</p>
+          </div>
+          <div class="pl">
+            <h4>COMPARAR PRODUCTOS | </h4>
+          </div>
+          <div class="muestra">
+            <p>No tiene artículos para comparar.</p>
+          </div>
+          <div class="pl">
+            <h4>PRODUCTOS RECIENTEMENTE VISTOS | </h4>
+          </div>
+          <div class="muestra">
+            <p><a href="#">CONSOLA NINTENDO SWITCH 32GB JOY CON GRISES</a></p>
+          </div>
+        </div>
+      </div>-->
+      <!--Seccion productos-->
+      <div class="row-container">
+        <div class="col-md-3">
+          <img src="img/tnintendo.jpg">
+          <div class="row">
+            <span><a href="detalle.html">CONSOLA NINTENDO SWITCH 32GB JOY CON GRISES</a></span>
+            <div>
+              <label>Nuevo</label>
+            </div>
+            <br>
+            <span><strong>NSW</strong></span>
+            <span>por NINTENDO</span>
+            <div class="space"></div>
+            <div>
+              <div>
+                <div>
+                  <p class="precioNormal">
+                    <span>Normal:</span>
+                    <span> $9,999.99 </span>
+                  </p>
+                  <p>
+                    <span>En tienda: </span>
+                    <span> $9,999.99 </span>
+                  </p>
+                  <p class="aDomicilio">
+                    <span>A domicilio:</span>
+                    <span>
+                      <span>$9,999.99</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <strong>UPC</strong>
+               045496590260-1-00016-56
+              <br>
+              <strong>Género</strong>
+               No
+              <br>
+              <strong>Lanzamiento</strong>
+               03/03/2017
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img src="img/ps4.jpg">
+          <div class="row">
+            <span><a href="ps4.html">CONSOLA PLAYSTATION 4 NEGRO 500GB</a></span>
+            <div>
+              <label>Nuevo</label>
+            </div>
+            <br>
+            <span><strong>PS4</strong></span>
+                <span>por SONY</span>
+                <div class="space"></div>
+                <div>
+                  <div>
+                    <div>
+                      <p class="precioNormal">
+                        <span>Normal:</span>
+                        <span> $7,499.99 </span>
+                      </p>
+                      <p>
+                        <span>En tienda: </span>
+                        <span> $6,599.99 </span>
+                      </p>
+                      <p class="aDomicilio">
+                        <span>A domicilio:</span>
+                        <span>
+                          <span>$5,940.00</span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <strong>UPC</strong>
+                   711719100355-0-00000-0
+                  <br>
+                  <strong>Género</strong>
+                   Otros
+                  <br>
+                  <strong>Lanzamiento</strong>
+                   29/11/2013
+                  <br>
+                </div>
+              </div>
+            </div>
+        <div class="col-md-3">
+          <img src="img/xbox one descripcion 2.jpg">
+          <div class="row">
+            <span><a href="xbox.html">CONSOLA XBOX ONE CON KINECT Y TARJETA GOLD LIVE 3 MESES REFURBISHED</a></span>
+            <div>
+              <label>Nuevo</label>
+            </div>
+            <br>
+            <span><strong>XONE</strong></span>
+            <span>por MICROSOFT</span>
+            <div class="space"></div>
+            <div>
+              <div>
+                <div>
+                  <p class="precioNormal">
+                  <span>Normal:</span>
+                  <span> $6,999.99 </span>
+                </p>
+                <p>
+                  <span>En tienda: </span>
+                  <span> $6,999.99 </span>
+                </p>
+                <p class="aDomicilio">
+                  <span>A domicilio:</span>
+                  <span>
+                    <span>$6,300.00</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <strong>UPC</strong> 885370844733-1-00000-0
+            <br>
+            <strong>Género</strong>
+            No
+            <br>
+            <strong>Lanzamiento</strong> 15/03/2016
+            <br>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+<!---------Fin catalogo------->
+
+<!------Detalle de producto es pagina aparte linkeada desde el catalogo----->
+
+<!--------------Inicio Contacto-------->
+
+<section id="contacto" class="row" style="background-color:black;" >
+    <div class="col-md-4 col-md-offset-4	col-xs-8 col-xs-offset-2 center">
+      <form>
+        <div class="form-group">
+          <label for="Nombre labels">Nombre</label>
+          <input type="name" class="form-control" id="Nombre" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1 labels">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+                <div class="form-group">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </section>  
+  <!------------Fin Contacto------->
+  
+  
+  <!------------Inicio footer------->
+  <footer>
+  <section class="row padding background">
+        <div id="servicio_cliente" class="col-md-3">
+          <ul>
+            <h4>Información</h4>
+            <li class="lista"><a href="#">Sobre nosotros</a></li>
+            <li class="lista"><a href="#">Trabaja con nosotros</a></li>
+            <li class="lista"><a href="#">Políticas de uso</a></li>
+          </ul>
+          <ul>
+            <h4>Promociones</h4>
+            <li class="lista"><a href="#">Consulta nuestras promociones</a></li>
+          </ul>
+        </div>
+        <div id="promociones" class="col-md-3 borderL">
+          <ul>
+            <h4>Servicio al cliente</h4>
+            <li class="lista"><a href="#">Preguntas frecuentes</a></li>
+            <li class="lista"><a href="#">Formas de pago</a></li>
+            <li class="lista"><a href="#">Aviso de Privacidad</a></li>
+            <li class="lista"><a href="#">Políticas de Garantías, Devoluciones , Cancelaciones, Facturación y Envios</a></li>
+            <li class="lista"><a href="#">Términos y Condiciones Generales</a></li>
+            <li class="lista"><a href="#">Compras en Línea</a></li>
+            <li class="lista"><a href="#">Servicios GamePlanet</a></li>
+            <li class="lista"><a href="#">Facturación Electrónica</a></li>
+            <li class="lista"><a href="#">Consulta de Giftcard</a></li>
+          </ul>
+        </div>
+        <div id="trabaja" class="col-md-3 borderL">
+          <ul>
+            <h4>Contactanos</h4>
+            <li class="lista">
+              <h5>
+              <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+              Por teléfono:
+              </h5>
+              <p>
+                01 55 47433000 ext 222 y 226
+                De Lunes a Viernes de 7am a 4pm.
+              </p>
+            </li>
+            <li class="lista">
+              <h5>
+                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                Por correo:
+              </h5>
+              <p>
+                <a href="#">eshop&#64;gameplanet.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div id="direccion" class="col-md-3">
+          <h5>
+            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+            Gameplanet S.A. de C.V. México D.F.
+          </h5>
+          <div class="col-md-12">
+            <img id="map" src="http://asociacionsocialmedia.org/wp-content/uploads/2014/03/google-maps-ahora-permite-crear-mapas-de-manera-mucho-mas-sencilla-con-la-google-maps-api-key.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div id="formaPago" class="col-md-4 col-md-offset-4	col-xs-8 col-xs-offset-2 text-center">
+            <h4>Formas de pago</h4>
+            <a href="#"><img src="img/paypal.png"></a>
+            <a href="#"><img src="img/amex.png"></a>
+            <a href="#"><img src="img/oxxo.png"></a>
+            <a href="#"><img src="img/visa.png"></a>
+            <a href="#"><img src="img/masterCard.png"></a>
+            <br> <br>
+            <p id="legales" class="small">© 2016 GamePlanet. Todos los Derechos Reservados.</p>
+        </div>
+      </section>
+  </footer>
+  <!------------Fin footer------->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
 </html>

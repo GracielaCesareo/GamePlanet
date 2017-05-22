@@ -1,3 +1,24 @@
+
+header{
+    background-color: yellow;    
+}
+
+#logoHeader {
+    width: 37%;
+}
+
+.p-car {
+    padding-left: 13%;
+}
+
+.p-carNeg {
+    padding-left: -15%;
+}
+
+.bg-Car {
+    background-color: crimson;
+}
+
 /*-----ESTILOS GENERALES-----*/
 .pl-3{
     padding-left: 3%;
@@ -22,3 +43,4 @@ nav div{
     background-color: #575151;
 }
 /*------Fin Estilos Mone----*/
+

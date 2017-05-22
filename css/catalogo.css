@@ -47,3 +47,11 @@ input+ a {
 .mb {
   margin-bottom: 15%;
 }
+
+.precioNormal{
+  color: blue;
+}
+
+.aDomicilio{
+  color: red;
+}
